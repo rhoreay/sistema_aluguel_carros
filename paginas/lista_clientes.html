@@ -1,1 +1,181 @@
- 
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="" />
+    <meta
+      name="author"
+      content="Mark Otto, Jacob Thornton, and Bootstrap contributors"
+    />
+    <meta name="generator" content="Astro v5.13.2" />
+    <title>Lista de Clientes - Lata Velha</title>
+    <link
+      rel="canonical"
+      href="https://getbootstrap.com/docs/5.3/examples/album/"
+    />
+    <script src="../assets/js/color-modes.js"></script>
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <meta name="theme-color" content="#C05C3B" />
+    <link href="../assets/style.css" rel="stylesheet" />
+  </head>
+  <body>
+    <main>
+      <section class="py-5 text-center container">
+        <div class="row py-lg-5">
+          <div class="col-lg-6 col-md-8 mx-auto">
+            <h1 class="fw-light">Confira nossos clientes cadastrados</h1>
+            <p class="lead text-body-secondary">
+              Lista de clientes habilitados para aluguel.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div class="album py-5 bg-body-tertiary">
+        <div class="container">
+          <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+            
+        
+            <!-- Cliente 1 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="../public/joao.jpeg" class="card-img-top" alt="João Silva" style="height: 225px; object-fit: cover;">
+                <div class="card-body">
+                  <p class="card-text">
+                    <table class="table table-sm table-borderless mb-0 bg-transparent" style="--bs-table-bg: transparent;">
+                      <tbody>
+                        <tr>
+                          <th>Nome:</th>
+                          <td>João Silva</td>
+                        </tr>
+                        <tr>
+                          <th>CPF:</th>
+                          <td>123.456.789-00</td>
+                        </tr>
+                        <tr>
+                          <th>E-mail:</th>
+                          <td>joao.silva@email.com</td>
+                        </tr>
+                        <tr>
+                          <th>Tel:</th>
+                          <td>(11) 98765-4321</td>
+                        </tr>
+                        <tr>
+                          <th>Endereço:</th>
+                          <td>Rua das Flores, 123, Centro, São Paulo - SP</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-secondary">
+                        Editar
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Ativo</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cliente 2 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="../public/maria.jpeg" class="card-img-top" alt="Maria Oliveira" style="height: 225px; object-fit: cover;">
+                <div class="card-body">
+                  <p class="card-text">
+                    <table class="table table-sm table-borderless mb-0 bg-transparent" style="--bs-table-bg: transparent;">
+                      <tbody>
+                        <tr>
+                          <th>Nome:</th>
+                          <td>Maria Oliveira</td>
+                        </tr>
+                        <tr>
+                          <th>CPF:</th>
+                          <td>987.654.321-99</td>
+                        </tr>
+                        <tr>
+                          <th>E-mail:</th>
+                          <td>maria.oliveira@email.com</td>
+                        </tr>
+                        <tr>
+                          <th>Tel:</th>
+                          <td>(21) 99888-7777</td>
+                        </tr>
+                        <tr>
+                          <th>Endereço:</th>
+                          <td>Av. Atlântica, 456, Copacabana, Rio de Janeiro - RJ</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-secondary">
+                        Editar
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Ativo</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Cliente 3 -->
+            <div class="col">
+              <div class="card shadow-sm">
+                <img src="../public/carlos.jpeg" class="card-img-top" alt="Carlos Souza" style="height: 225px; object-fit: cover;">
+                <div class="card-body">
+                  <p class="card-text">
+                    <table class="table table-sm table-borderless mb-0 bg-transparent" style="--bs-table-bg: transparent;">
+                      <tbody>
+                        <tr>
+                          <th>Nome:</th>
+                          <td>Carlos Souza</td>
+                        </tr>
+                        <tr>
+                          <th>CPF:</th>
+                          <td>456.789.123-55</td>
+                        </tr>
+                        <tr>
+                          <th>E-mail:</th>
+                          <td>carlos.souza@email.com</td>
+                        </tr>
+                        <tr>
+                          <th>Tel:</th>
+                          <td>(31) 99123-4567</td>
+                        </tr>
+                        <tr>
+                          <th>Endereço:</th>
+                          <td>Rua Bahia, 789, Savassi, Belo Horizonte - MG</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </p>
+                  <div class="d-flex justify-content-between align-items-center mt-3">
+                    <div class="btn-group">
+                      <button type="button" class="btn btn-sm btn-secondary">
+                        Editar
+                      </button>
+                    </div>
+                    <small class="text-body-secondary">Ativo</small>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <a href="index.html" class="btn btn-primary my-2">Voltar para menu</a>
+    </footer>
+    <script
+      src="../assets/dist/js/bootstrap.bundle.min.js"
+      class="astro-vvvwv3sm"
+    ></script>
+  </body>
+</html>
