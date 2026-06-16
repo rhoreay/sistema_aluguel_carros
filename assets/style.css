@@ -1,0 +1,228 @@
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+/* ============================================
+   PALETA DE CORES — LATA VELHA
+   ============================================
+   Fundo Principal:      #F4F1EA (pergaminho)
+   Superfícies/Cards:    #EAE5D9
+   Texto Principal:      #3E362E (marrom-café)
+   Texto Secundário:     #8C7D70 (areia escurecido)
+   Destaque Primary:     #C05C3B (ferrugem/terracota)
+   Destaque Secondary:   #2B4C59 (azul-petróleo)
+   ============================================ */
+
+/* --- Variáveis globais --- */
+:root,
+[data-bs-theme="light"] {
+  --bs-body-bg: #F4F1EA;
+  --bs-body-bg-rgb: 244, 241, 234;
+  --bs-body-color: #3E362E;
+  --bs-body-color-rgb: 62, 54, 46;
+  --bs-secondary-color: #8C7D70;
+  --bs-secondary-color-rgb: 140, 125, 112;
+  --bs-tertiary-bg: #EAE5D9;
+  --bs-tertiary-bg-rgb: 234, 229, 217;
+  --bs-primary: #C05C3B;
+  --bs-primary-rgb: 192, 92, 59;
+  --bs-secondary: #2B4C59;
+  --bs-secondary-rgb: 43, 76, 89;
+  --bs-link-color: #C05C3B;
+  --bs-link-color-rgb: 192, 92, 59;
+  --bs-link-hover-color: #A34E32;
+  --bs-link-hover-color-rgb: 163, 78, 50;
+}
+
+[data-bs-theme="dark"] {
+  --bs-body-bg: #2A2420;
+  --bs-body-bg-rgb: 42, 36, 32;
+  --bs-body-color: #E8E0D6;
+  --bs-body-color-rgb: 232, 224, 214;
+  --bs-secondary-color: #A89A8C;
+  --bs-secondary-color-rgb: 168, 154, 140;
+  --bs-tertiary-bg: #3A322C;
+  --bs-tertiary-bg-rgb: 58, 50, 44;
+  --bs-primary: #D4734F;
+  --bs-primary-rgb: 212, 115, 79;
+  --bs-secondary: #3E6B7A;
+  --bs-secondary-rgb: 62, 107, 122;
+  --bs-link-color: #D4734F;
+  --bs-link-color-rgb: 212, 115, 79;
+  --bs-link-hover-color: #E0936F;
+  --bs-link-hover-color-rgb: 224, 147, 111;
+}
+
+/* --- Botão Primary (terracota) --- */
+.btn-primary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #C05C3B;
+  --bs-btn-border-color: #C05C3B;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #A34E32;
+  --bs-btn-hover-border-color: #9A492F;
+  --bs-btn-focus-shadow-rgb: 192, 92, 59;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #8F4429;
+  --bs-btn-active-border-color: #8F4429;
+  --bs-btn-disabled-bg: #C05C3B;
+  --bs-btn-disabled-border-color: #C05C3B;
+}
+
+.btn-outline-primary {
+  --bs-btn-color: #C05C3B;
+  --bs-btn-border-color: #C05C3B;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #C05C3B;
+  --bs-btn-hover-border-color: #C05C3B;
+  --bs-btn-focus-shadow-rgb: 192, 92, 59;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #A34E32;
+  --bs-btn-active-border-color: #A34E32;
+}
+
+/* --- Botão Secondary (azul-petróleo) --- */
+.btn-secondary {
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #2B4C59;
+  --bs-btn-border-color: #2B4C59;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #233F4A;
+  --bs-btn-hover-border-color: #1F3842;
+  --bs-btn-focus-shadow-rgb: 43, 76, 89;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #1D3540;
+  --bs-btn-active-border-color: #1D3540;
+  --bs-btn-disabled-bg: #2B4C59;
+  --bs-btn-disabled-border-color: #2B4C59;
+}
+
+.btn-outline-secondary {
+  --bs-btn-color: #2B4C59;
+  --bs-btn-border-color: #2B4C59;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #2B4C59;
+  --bs-btn-hover-border-color: #2B4C59;
+  --bs-btn-focus-shadow-rgb: 43, 76, 89;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #233F4A;
+  --bs-btn-active-border-color: #233F4A;
+}
+
+/* --- Backgrounds utilitários --- */
+.bg-primary {
+  background-color: #C05C3B !important;
+}
+.bg-secondary {
+  background-color: #2B4C59 !important;
+}
+.bg-body-tertiary {
+  background-color: var(--bs-tertiary-bg) !important;
+}
+
+/* --- Texto utilitário --- */
+.text-primary {
+  color: #C05C3B !important;
+}
+.text-secondary,
+.text-body-secondary {
+  color: var(--bs-secondary-color) !important;
+}
+
+/* --- Navbar --- */
+.navbar.bg-dark {
+  background-color: #2B4C59 !important;
+}
+.text-bg-dark {
+  background-color: #233F4A !important;
+  color: #E8E0D6 !important;
+}
+
+/* --- Cards --- */
+.card {
+  --bs-card-bg: #EAE5D9;
+  --bs-card-border-color: #DDD6C8;
+  --bs-card-color: #3E362E;
+}
+
+[data-bs-theme="dark"] .card {
+  --bs-card-bg: #3A322C;
+  --bs-card-border-color: #4A423C;
+  --bs-card-color: #E8E0D6;
+}
+
+/* ============================================
+   ESTILOS DO TEMPLATE (album bootstrap)
+   ============================================ */
+.bd-placeholder-img {
+  font-size: 1.125rem;
+  text-anchor: middle;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+@media (min-width: 768px) {
+  .bd-placeholder-img-lg {
+    font-size: 3.5rem;
+  }
+}
+.b-example-divider {
+  width: 100%;
+  height: 3rem;
+  background-color: #0000001a;
+  border: solid rgba(0, 0, 0, 0.15);
+  border-width: 1px 0;
+  box-shadow:
+    inset 0 0.5em 1.5em #0000001a,
+    inset 0 0.125em 0.5em #00000026;
+}
+.b-example-vr {
+  flex-shrink: 0;
+  width: 1.5rem;
+  height: 100vh;
+}
+.bi {
+  vertical-align: -0.125em;
+  fill: currentColor;
+}
+.nav-scroller {
+  position: relative;
+  z-index: 2;
+  height: 2.75rem;
+  overflow-y: hidden;
+}
+.nav-scroller .nav {
+  display: flex;
+  flex-wrap: nowrap;
+  padding-bottom: 1rem;
+  margin-top: -1px;
+  overflow-x: auto;
+  text-align: center;
+  white-space: nowrap;
+  -webkit-overflow-scrolling: touch;
+}
+.btn-bd-primary {
+  --bs-btn-font-weight: 600;
+  --bs-btn-color: #fff;
+  --bs-btn-bg: #C05C3B;
+  --bs-btn-border-color: #C05C3B;
+  --bs-btn-hover-color: #fff;
+  --bs-btn-hover-bg: #A34E32;
+  --bs-btn-hover-border-color: #A34E32;
+  --bs-btn-focus-shadow-rgb: 192, 92, 59;
+  --bs-btn-active-color: #fff;
+  --bs-btn-active-bg: #8F4429;
+  --bs-btn-active-border-color: #8F4429;
+}
+.bd-mode-toggle {
+  z-index: 1500;
+}
+.bd-mode-toggle .bi {
+  width: 1em;
+  height: 1em;
+}
+.bd-mode-toggle .dropdown-menu .active .bi {
+  display: block !important;
+}
+
